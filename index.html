@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO APPLICATION</title>
+	<style type="text/css">
+		*{
+		  font-family: 'Questrial', sans-serif;
+		  font-size: 18px;
+		  margin: 0px;
+		  padding: 0px;
+		}
+		h3{
+	      font-size: 1.8em;
+        }
+		.home{
+		  min-height: 100vh;
+		  background-image: url("blue.jpg");
+		  background-size: cover;
+		  font-size: 20px;
+		}
+		.heading{
+			width: 50%;
+			margin: auto;
+			padding: 20px;
+			text-align: center;
+			color: #6B8E23;
+			background: #FFF8DC;
+			border: 2px solid #6B8E23;
+			border-radius: 20px;
+
+		}
+		form{
+			width: 50%;
+			margin: 30px auto;
+			padding: 10px;
+			border-radius: 5px;
+			background: #FFF8DC;
+			border: 1px solid #6B8E23;
+		}
+		form p{
+			color: red;
+			margin: 0;
+		}
+		.task_input{
+			width: 50%;
+			height: 20px;
+			padding: 10px;
+			border: 2px solid #6B8E23;
+			margin-top: 10px;
+			text-align: center;
+		}
+		.task_input1{
+			width: 50%;
+			height: 20px;
+			padding: 10px;
+			border: 2px solid #6B8E23;
+			margin-top: 10px;
+			text-align: center;
+		}
+		.task_btn{
+			height: 39px;
+			background: #FFF8DC;
+			border: 2px solid #6B8E23;
+			color: #6B8E23;
+			border-radius: 5px;
+			padding: 5px 20px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		.task_btn1{
+			height: 39px;
+			background: #FFF8DC;
+			border: 2px solid #6B8E23;
+			color: #6B8E23;
+			border-radius: 5px;
+			padding: 5px 20px;
+			cursor: pointer;
+		}
+		table{
+			width: 50%;
+			margin: 30px auto;
+			border-collapse: collapse;
+		}
+		tr{
+			border-top: 1px solid #cbcbcb;
+		}
+		th{
+			font-size: 19px;
+			color: black;
+		}
+		th,td{
+			border: none;
+			height: 30px;
+			padding: 2px;
+		}
+		tr:hover{
+			background: #E9E9E9;
+		}
+		.task{
+			text-align: center;
+		}
+		.delete{
+			text-align: center;
+		}
+		.delete a{
+			color: white;
+			background: #a52a2a;
+			padding: 1px 6px;
+			border-radius: 3px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+<div class="home">
+	<div class="heading">
+		<h3>TODO APPLICATION WITH PHP,HTML AND CSS</h3>
+	</div>
+	<form method="POST" action="index.php">
+		<input type="text" name="task" class="task_input" placeholder="TODO TITLE">
+		<input type="text" name="deadline" class="task_input1" placeholder="DEADLINE"><br>
+        <button type="submit" class="task_btn" name="submit">SUBMIT</button>
+        <button type="reset" class="task_btn1" name="reset">CLEAR</button>	
+	</form>
+	<table>
+		<thead>
+			<tr>
+				<th>TODO TITLE</th>
+				<th>DEADLINE</th>
+				<th>DELETE</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr align="center">
+				<td class="task">First Todo title</td>
+				<td class="deadline">31st may 11.59pm</td>
+				<td class="delete">
+					<a href="#">DELETE</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</body>
+</html>
